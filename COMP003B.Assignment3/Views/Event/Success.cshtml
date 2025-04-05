@@ -1,0 +1,13 @@
+﻿@model COMP003B.Assignment3.Models.EventRegistration
+
+<h2>Your Registration has been Successful!</h2>
+
+<ul>
+	<li>Email Entered: <strong>@Model.Email</strong></li>
+	<li>Event Code: <strong>@Model.EventCode</strong></li>
+	<li>Total Tickets: <strong>@Model.Tickets</strong></li>
+	@if(!string.IsNullOrEmpty(Model.ReferralCode))
+	{
+	<li>Referral Code: <strong>@Model.ReferralCode</strong></li>
+	}
+</ul>
